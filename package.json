@@ -17,6 +17,13 @@
     "electron-updater": "^4.3.9"
   },
   "build": {
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "CristianFrancoD",
+        "repo": "test-updater-electron"
+      }
+    ],
     "appId": "com.github.iffy.electronupdaterexample",
     "afterSign": "./build/notarize.js",
     "mac": {
